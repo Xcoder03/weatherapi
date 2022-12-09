@@ -8,7 +8,11 @@ function App() {
   return (
     <div className="app">
       <div className="container">
-        
+          <input type="text" className="" ></input>
+          <h2>City</h2>
+          <div className="location">
+
+           </div>
         </div>   
     </div>
   );
