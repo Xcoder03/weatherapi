@@ -93,3 +93,13 @@
   align-items: center;
   flex-direction: column;
 }
+
+@media (max-width: 800px) {
+  .container-props{
+    width: 90%;
+  }
+
+  .props{
+    width: 25%;
+  }
+}
