@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import './App.css';
 
 function App() {
@@ -30,23 +30,23 @@ function App() {
        <div className="city">
           <h2>{data.name}</h2>
          {data.main ? <p>{data.main.temp} &#8457;</p> : null }
-          <p>Clouds</p>
+         {data.weather ? <p>{data.weather[0].description}</p> : null }
        </div>
 
        <div className="container-props">
           <div className="props">
-            <p>Temp &#8457;</p>
+          {data.main ? <p>{data.main.feels_like} &#8457;</p> : null }
             <p>Feels Like</p>
           </div>
 
           <div className="props">
-            <p>Temp &#8457;</p>
+          {data.main ? <p>{data.main.humidity} </p> : null }
             <p>Humidity</p>
           </div>
 
           <div className="props">
-            <p>Temp &#8457;</p>
-            <p>Wind</p>
+            {data.wind ? <p>{data.wind.speed}</p> : null }
+            <p>Wind speed</p>
           </div>
        </div>
     </div>

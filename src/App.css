@@ -50,9 +50,7 @@
   color: white;
 }
 
-.app input:focus{
 
-}
 
 .city{
   height: 200px;
@@ -100,6 +98,13 @@
   }
 
   .props{
-    width: 25%;
+    width: 28%;
+  }
+  .city{
+    width: 310px;
+  }
+
+  .city h2{
+    font-size: 40px;
   }
 }
